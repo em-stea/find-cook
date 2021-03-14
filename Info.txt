@@ -34,3 +34,8 @@ npm i gh-pages
 3-Correr en la terminal el comando: npm run build 
 Genera la carpeta "build" estática con todo el código de React pero convertido en archivos Html, Css y Js.
 Este comando "npm run build" lo tiene que ejecutar GitHub Pages para q lo pueda subir.
+
+4- Publicar el código > tipear en la terminal:
+npm run deploy -> ejecuta npm run build. Luego obtiene el comando de gh-pages para desplegar la carpeta build.
+
+5- Dirá PUBLISHED.
