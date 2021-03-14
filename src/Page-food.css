@@ -1,0 +1,16 @@
+.top50 {
+  margin-top: 50px;
+}
+.pic-food {
+  /*border-radius: 50%;*/
+  width: 423px;
+  box-shadow: 8px 8px 11px 1px rgb(0 0 0 / 7%);
+}
+.margenes50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+body {
+  color: #666;
+}
