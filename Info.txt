@@ -1,0 +1,36 @@
+Subir proyecto React a GitGub Pages:
+
+Github Pages hostea sitios web estáticos (Html, Css y JS). Por lo q para subir un proyecto en React hay q hacer lo sig:
+
+BÁSICO:
+- Crear repositorio. Subir el proyecto. Clonarlo en nuestra pc y desplegarlo. 
+- Abrir la terminal en VSC y tipear "Terminal Integrated". Seleccionar "Terminal: Create New Integrated Terminal" (abrirá una consola en nuestro proyecto)
+- Ejecutar: npm start (nos brinda un servidor)
+
+IMPORTANTE:
+1- Instalar el módulo gh-pages - npm:
+Tipear en la terminal:
+npm i gh-pages
+
+2-Ir a package.json y agregar HOMEPAGE, PREDEPLOY y DEPLOY:
+
+    {
+  "name": "find-cook",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://em-stea.github.io/find-cook", -> homepage lleva la dirección de mi github/repositorio. Indico que acá se sube el código.
+  "dependencies": {
+        //...
+  },
+  "scripts": {
+    "predeploy": "npm run build", -> este comando se ejecuta antes de que suba el código (así GitHub Pages lo puede procesar)
+    "deploy": "gh-pages -d build", -> le indico a gh-pages donde está la carpeta "build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+3-Correr en la terminal el comando: npm run build 
+Genera la carpeta "build" estática con todo el código de React pero convertido en archivos Html, Css y Js.
+Este comando "npm run build" lo tiene que ejecutar GitHub Pages para q lo pueda subir.
